@@ -11,9 +11,9 @@
           <div class="container">
           <div class="page-header__wrapper">
           <div class="page-logo page-logo--open">
-          <a class="page-logo__link">
-            <img class="page-logo__image" src="#" width="#" height="#" alt="Pink">
-          </a>
+              <a class="page-logo__link">
+                  <img class="page-logo__image" src="img/logo-pink-white-mobile.svg" width="#" height="#" alt="Pink">
+                </a>
         </div>
         <button type="button" class="main-nav__toggle main-nav__toggle--active">
               <span></span>
@@ -59,16 +59,16 @@
               <blockquote class="photo-comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите
                 прямую транслацию в перископе, задавайте свои вопросы!</blockquote>
               <div class="photo-comment__like">
-                  <a class="like-image" href="#">
+                  <a class="like__image" href="#">
                       <img class="like__icon" src="img/icon-heart.svg" width="#" height="#">
                     </a>
-                <span class="like-text">Нравится:
-                  <span class="like-register">215</span>
+                <span class="like__text">Нравится:
+                  <span class="like__register">215</span>
                 </span>
               </div>
             </div>
           </article>
-          <div class="photo-block__include">
+          <div class="photo__include">
           <article class="photo">
             <a class="photo__link" href="#" alt="Открыть фото">
               <img class="photo__image" src="img/photo-car-mobile@1x.jpg" width="#" height="#">
@@ -78,11 +78,11 @@
               <blockquote class="photo-comment__text">
                 Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
               <div class="photo-comment__like">
-                  <a class="like-image" href="#">
+                  <a class="like__image" href="#">
                       <img class="like__icon" src="img/icon-heart.svg" width="#" height="#">
                     </a>
-                <span class="like-text">Нравится:
-                  <span class="like-register">365</span>
+                <span class="like__text">Нравится:
+                  <span class="like__register">365</span>
                 </span>
               </div>
             </div>
@@ -95,11 +95,11 @@
               <cite class="photo-comment__author">Антон<span class="photo-comment__time"> (12 часов назад)</span></cite>
               <blockquote class="photo-comment__text">Соседи будут рады!</blockquote>
               <div class="photo-comment__like">
-                  <a class="like-image" href="#">
+                  <a class="like__image" href="#">
                       <img class="like__icon" src="img/icon-heart.svg" width="#" height="#">
                     </a>
-                <span class="like-text">Нравится:
-                  <span class="like-register">666</span>
+                <span class="like__text">Нравится:
+                  <span class="like__register">666</span>
                 </span>
               </div>
             </div>
@@ -113,11 +113,11 @@
               <blockquote class="photo-comment__text">
                 Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
               <div class="photo-comment__like">
-                  <a class="like-image" href="#">
+                  <a class="like__image" href="#">
                       <img class="like__icon" src="img/icon-heart.svg" width="#" height="#">
                     </a>
-                <span class="like-text">Нравится:
-                  <span class="like-register">215</span>
+                <span class="like__text">Нравится:
+                  <span class="like__register">215</span>
                 </span>
               </div>
             </div>
@@ -130,11 +130,11 @@
               <cite class="photo-comment__author">Сергей<span class="photo-comment__time"> (25 часов назад)</span></cite>
               <blockquote class="photo-comment__text">Самая кубанская в мире!</blockquote>
               <div class="photo-comment__like">
-                  <a class="like-image" href="#">
+                  <a class="like__image" href="#">
                       <img class="like__icon" src="img/icon-heart.svg" width="#" height="#">
                     </a>
-                <span class="like-text">Нравится:
-                  <span class="like-register">4</span>
+                <span class="like__text">Нравится:
+                  <span class="like__register">4</span>
                 </span>
               </div>
             </div>
@@ -147,11 +147,11 @@
               <cite class="photo-comment__author">Максим<span class="photo-comment__time"> (40 часов назад)</span></cite>
               <blockquote class="photo-comment__text">Где снег-то?</blockquote>
               <div class="photo-comment__like">
-                  <a class="like-image" href="#">
+                  <a class="like__image" href="#">
                     <img class="like__icon" src="img/icon-heart.svg" width="#" height="#">
                   </a>
-                <span class="like-text">Нравится:
-                  <span class="like-register">150</span>
+                <span class="like__text">Нравится:
+                  <span class="like__register">150</span>
                 </span>
               </div>
             </div>
@@ -164,11 +164,11 @@
               <cite class="photo-comment__author">Надежда<span class="photo-comment__time"> (45 часов назад)</span></cite>
               <blockquote class="photo-comment__text">Всем GM и взаимные лайки</blockquote>
               <div class="photo-comment__like">
-                  <a class="like-image" href="#">
+                  <a class="like__image" href="#">
                       <img class="like__icon" src="img/icon-heart.svg" width="#" height="#">
                     </a>
-                <span class="like-text">Нравится:
-                  <span class="like-register">2560</span>
+                <span class="like__text">Нравится:
+                  <span class="like__register">2560</span>
                 </span>
               </div>
             </div>
@@ -184,25 +184,39 @@
               Выкладывайте все, что накопилось в телефоне!
             </p>
             <form class="form-upload" action="#" method="post">
-              <img src="#" width="#" height="#" alt="Пример загруженного фото">
+              <div class="form-upload__image">
+              <img src="img/photo-road-mobile@1x.jpg" width="#" height="#" alt="Пример загруженного фото">
+            </div>
               <div class="form-upload__sort">
-                <input type="radio" value="filter-prun" id="upload-filter-prun" name="upload-filter" checked>
-                <input type="radio" value="filter-fill" id="upload-filter-clarity" name="upload-filter">
-                <input type="radio" value="filter-contrast" id="upload-filter-contrast" name="upload-filter">
-                <div class="upload-form__filter-controls">
-                  <label class="form-upload__filter-toggle  form-upload__filter-toggle--prun" for="upload-filter-prun">
-                  </label>
-                  <label class="form-upload__filter-toggle  form-upload__filter-toggle--clarity" for="upload-filter-clarity">
-                  </label>
-                  <label class="form-upload__filter-toggle  form-upload__filter-toggle--contrast" for="upload-filter-contrast">
+                <input type="radio" value="filter-prun" id="form-upload__filter-prun" name="form-upload__filter" checked>
+                <input type="radio" value="filter-clarity" id="form-upload__filter-clarity" name="form-upload__filter">
+                <input type="radio" value="filter-contrast" id="form-upload__filter-contrast" name="form-upload__filter">
+                <div class="form-upload__filter-controls">
+                  <label class="form-upload__filter-toggle  form-upload__filter-toggle--prun" for="form-upload__filter-prun">
+                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                        <path fill="none" d="M0,0h48v48H0V0z"/>
+                        <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                      </svg>
+                     </label>
+                  <label class="form-upload__filter-toggle  form-upload__filter-toggle--clarity" for="form-upload__filter-clarity">
+                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                        <path fill="none" d="M0,0h48v48H0V0z"/>
+                        <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                        <rect y="40" width="48" height="3"/>
+                      </svg> </label>
+                  <label class="form-upload__filter-toggle  form-upload__filter-toggle--contrast" for="form-upload__filter-contrast">
+                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                        <path fill="@blue-30" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                        <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                      </svg>
                   </label>
                 </div>
                 <div class="range-controls">
                   <div class="range-controls__wrap  range-controls__wrap--prun">
-                    <div class="range-filter  range-filter--crop"></div>
+                    <div class="range-filter  range-filter--prun"></div>
                   </div>
                   <div class="range-controls__wrap  range-controls__wrap--clarity">
-                    <div class="range-filter  range-filter--fill"></div>
+                    <div class="range-filter  range-filter--clarity"></div>
                   </div>
                   <div class="range-controls__wrap  range-controls__wrap--contrast">
                     <div class="range-filter  range-filter--contrast"></div>

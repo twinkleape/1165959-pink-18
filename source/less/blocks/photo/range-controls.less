@@ -1,0 +1,21 @@
+.range-controls {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid @blue-10;
+  padding-top: 35px;
+  padding-bottom: 34px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.range-controls__wrap {
+  display: none;
+}
+
+input[value="filter-prun"]:checked ~ .range-controls .range-controls__wrap--prun,
+input[value="filter-clarity"]:checked ~ .range-controls .range-controls__wrap--clarity,
+input[value="filter-contrast"]:checked ~ .range-controls .range-controls__wrap--contrast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

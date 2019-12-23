@@ -1,0 +1,63 @@
+.slider {
+  position: relative;
+}
+
+.slider__input {
+  display: none;
+}
+
+.slider__inner {
+  overflow: hidden;
+}
+
+.slider__list {
+  display: flex;
+  transition: transform 0.8s ease;
+
+  &--table {
+    display: table;
+  }
+}
+
+.slider__item {
+  width: 100%;
+}
+
+.slider__controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__control {
+  width: 6px;
+  height: 6px;
+  margin: 0 9px;
+  background-color: @blue-30;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @blue-60;
+  }
+
+  &:active {
+    background-color: @blue-10;
+  }
+}
+
+#slide-btn1:checked ~ .slider__controls label[for="slide-btn1"],
+#slide-btn2:checked ~ .slider__controls label[for="slide-btn2"],
+#slide-btn3:checked ~ .slider__controls label[for="slide-btn3"],
+input[id="table-slide-btn1"]:checked ~ .slider__controls label[for="table-slide-btn1"],
+input[id="table-slide-btn2"]:checked ~ .slider__controls label[for="table-slide-btn2"],
+input[id="table-slide-btn3"]:checked ~ .slider__controls label[for="table-slide-btn3"] {
+  box-shadow: 0 0 0 3px @dark;
+  background-color: @white;
+}
+#slide-btn1:checked ~ .slider__inner .reviews__item:nth-child(1),
+#slide-btn2:checked ~ .slider__inner .reviews__item:nth-child(2),
+#slide-btn3:checked ~ .slider__inner .reviews__item:nth-child(3) {
+  display: block;
+}

@@ -1,0 +1,55 @@
+.form-upload {
+  background-color: @bg-gray;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-upload img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.form-upload__image {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.form-upload__filter-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 38px 66px 0 55px;
+}
+
+.form-upload input[name="form-upload__filter"] {
+  display: none;
+}
+
+input[value="filter-prun"]:checked ~ .form-upload__filter-controls label[for="form-upload__filter-prun"] svg,
+input[value="filter-clarity"]:checked ~ .form-upload__filter-controls label[for="form-upload__filter-clarity"] svg,
+input[value="filter-contrast"]:checked ~ .form-upload__filter-controls label[for="form-upload__filter-contrast"] svg {
+  fill: @pink;
+}
+
+.form-upload__filter-toggle {
+  cursor: pointer;
+}
+
+.form-upload__filter-toggle svg {
+  fill: @blue-30;
+}
+
+.form-upload__filter-toggle:hover svg {
+  fill: @blue-50;
+}
+
+.form-upload__buttons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 38px;
+  margin-bottom: 38px;
+}

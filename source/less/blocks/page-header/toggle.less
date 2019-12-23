@@ -1,0 +1,52 @@
+.main-nav__toggle {
+  display: inline-block;
+  position: absolute;
+  right: 22px;
+  top: 10px;
+  z-index: 3;
+  justify-content: flex-end;
+  height: 22px;
+  padding: 22px 20px 26px;
+
+  .toggle__icon {
+    display: block;
+    width: 50px;
+    height: 24px;
+    background: url("#") no-repeat;
+    background-size: 50px 24px;
+    cursor: pointer;
+
+    &:hover {
+      background: url("#") no-repeat;
+      background-size: 50px 24px;
+    }
+
+    &:active {
+      background: url("#") no-repeat;
+      background-size: 50px 24px;
+      opacity: 0.3;
+    }
+  }
+
+  &--active {
+    background-color: @dark;
+    box-shadow: inset 0 -2px 0 -1px @black;
+
+    span {
+      width: 24px;
+      background: url("#") no-repeat;
+      background-size: 23px 22px;
+
+      &:hover {
+        background: url("#") no-repeat;
+        background-size: 23px 22px;
+      }
+
+      &:active {
+        background: url("#") no-repeat;
+        background-size: 23px 22px;
+        opacity: 0.3;
+      }
+    }
+  }
+}
