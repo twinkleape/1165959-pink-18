@@ -92,10 +92,25 @@
         </div>
       </div>
     </section>
+    <section class="benefit">
+      <div class="container">
+        <div class="benefit__wrapper">
+          <div class="benefit__content">
+            <h3 class="benefit__title">Эффект на 24 часа!</h3>
+            <p class="benefit__text">Британские учёные провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a href="#" class="benefit__link">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </div>
+      </section>
     <section class="reviews">
       <div class="container">
       <div class="reviews__wrapper slider">
+          <input class="slider__input" type="radio" name="slide-btn" value="slide-btn1" id="slide-btn1" checked>
+          <input class="slider__input" type="radio" name="slide-btn" value="slide-btn2" id="slide-btn2">
+          <input class="slider__input" type="radio" name="slide-btn" value="slide-btn3" id="slide-btn3">
         <h2 class="visually-hidden">Отзывы о Pink</h2>
+        <div class="slider__inner">
         <ul class="reviews__list slider__list">
           <li class="reviews__item slider__item">
             <blockquote>
@@ -106,26 +121,26 @@
                 <p class="reviews__about">25 лет, водитель трамвая</p>
             </blockquote>
           </li>
-          <li class="reviews__item slider__item mobile-hidden">
+          <li class="reviews__item slider__item">
             <blockquote>
               <p class="reviews__author">Сергей Иванов</p>
                 <p class="reviews__text">«Это приложение изменило мою жизнь! Сначала жена переписывалась там с кем-то в коментариях, потом вообще подала на развод и вышла за него замуж....»</p>
                 <p class="reviews__about">35 лет, старший водитель трамвая</p>
             </blockquote>
           </li>
-          <li class="reviews__item slider__item mobile-hidden">
+          <li class="reviews__item slider__item">
             <blockquote>
               <p class="reviews__author">Иван Николаев</p>
               <p class="reviews__text">«Куда тут тыкать то? Сидел 5 часов тыкал в экран, так и не понял»</p>
               <p class="reviews__about">86 лет, уверенный пользователь ПК</p>
             </blockquote>
           </li>
-        </ul>
-        <p class="reviews__toggles slider__toggle">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+        </ul></div>
+        <div class="slider__controls">
+            <label class="slider__control  slider__control--1" for="slide-btn1"></label>
+            <label class="slider__control  slider__control--2" for="slide-btn2"></label>
+            <label class="slider__control  slider__control--3" for="slide-btn3"></label>
+          </div>
       </div>
     </div>
     </section>
@@ -133,11 +148,14 @@
 
     <section class="price">
       <div class="container">
-      <div class="price__wrapper">
-        <div class="price-list">
+          <div class="price__wrapper slider">
+              <input class="slider__input" type="radio" name="table-slide-btn" value="table-slide-btn1" id="table-slide-btn1">
+              <input class="slider__input" type="radio" name="table-slide-btn" value="table-slide-btn2" id="table-slide-btn2" checked>
+              <input class="slider__input" type="radio" name="table-slide-btn" value="table-slide-btn3" id="table-slide-btn3">
+        <div class="price-list slider__inner">
         <table class="price-table  slider__list  slider__list--table">
             <tbody>
-              <tr class="price-table__row slider__item--table">
+              <tr class="price-table__row">
                   <th class="price-table__title  price-table__title--hidden">
                     </th>
                     <th class="price-table__title">
@@ -153,7 +171,7 @@
                       <span class="price-table__price">9,99 USD</span>
                     </th>
               </tr>
-              <tr class="price-table__row slider__item slider__item--table">
+              <tr class="price-table__row">
                   <td class="price-table__element  price-table__element--hidden">
                       <span class="price-table__option">Розовый фильтр</span>
                     </td>
@@ -167,7 +185,7 @@
                   <span class="price-table__option price-table__option--hidden">Розовый фильтр</span>
                 </td>
               </tr>
-              <tr class="price-table__row slider__item slider__item--table">
+              <tr class="price-table__row">
                 <td class="price-table__element  price-table__element--hidden">
                       <span class="price-table__option">Смайлики</span>
                     </td>
@@ -181,7 +199,7 @@
                   <span class="price-table__option price-table__option--hidden">Смайлики</span>
                 </td>
               </tr>
-              <tr class="price-table__row slider__item slider__item--table">
+              <tr class="price-table__row">
                   <td class="price-table__element price-table__element--hidden">
                       <span class="price-table__option">Комментарии</span>
                     </td>
@@ -199,11 +217,11 @@
           </table>
         </div>
       </div>
-        <p class="price__toggles slider__toggle slider__toggle--table">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+      <div class="slider__controls  slider__controls--table">
+          <label class="slider__control  slider__control--1" for="table-slide-btn1"></label>
+          <label class="slider__control  slider__control--2" for="table-slide-btn2"></label>
+          <label class="slider__control  slider__control--3" for="table-slide-btn3"></label>
+        </div>
       </div>
     </div>
   </div>

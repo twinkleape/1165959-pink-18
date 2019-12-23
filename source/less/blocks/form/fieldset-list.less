@@ -1,0 +1,99 @@
+.fieldset-list {
+  .ul-none;
+}
+
+.fieldset-list__item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.fieldset-list__item input[type="text"],
+.fieldset-list__item input[type="tel"],
+.fieldset-list__item input[type="email"] {
+  border: 2px solid #e5e5e5;
+  display: block;
+  border-radius: 2px;
+  padding: 19px 19px;
+  margin-bottom: 18px;
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  appearance: none;
+  background-color: transparent;
+  z-index: 33;
+
+  &::placeholder {
+    color: @dark;
+    opacity: 1;
+  }
+
+  &:hover {
+    border-color: @dark;
+  }
+
+  &:focus {
+    border-color: @pink;
+  }
+}
+
+
+.fieldset-list__item input[type="checkbox"],
+.fieldset-list__item input[type="radio"] {
+  display: none;
+}
+
+.fieldset-list__item input[type="checkbox"] + label,
+.fieldset-list__item input[type="radio"] + label {
+  cursor: pointer;
+}
+
+.fieldset-list__item input[type="checkbox"] + label::before,
+.fieldset-list__item input[type="radio"] + label::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  box-sizing: border-box;
+  width: 39px;
+  height: 39px;
+  border: 2px solid #e5e5e5;
+  background-color: @white;
+}
+
+.fieldset-list__item input[type="checkbox"] + label::before {
+  top: 1px;
+}
+
+.fieldset-list__item input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 55% 50%;
+  background-size: 64%;
+}
+
+.fieldset-list__item input[type="checkbox"] + label:hover::before,
+.fieldset-list__item input[type="radio"] + label:hover::before {
+  border-color: @dark;
+}
+
+.fieldset-list__item input[type="checkbox"] + label:active::before,
+.fieldset-list__item input[type="radio"] + label:active::before {
+  border-color: @pink;
+}
+
+.fieldset-list__item input[type="radio"] + label::before {
+  top: -4px;
+  border-radius: 50%;
+}
+
+.fieldset-list__item input[type="radio"]:checked + label::after {
+  position: absolute;
+  content: "";
+  left: 12px;
+  top: 8px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: @pink;
+}

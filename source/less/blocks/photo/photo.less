@@ -1,0 +1,40 @@
+.photo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 21px;
+
+  &--main {
+    margin-top: 0;
+    margin-bottom: 21px;
+  }
+}
+
+.photo--main::before {
+  content: "панорама дня";
+  position: absolute;
+  right: 20px;
+  top: 0;
+  text-transform: uppercase;
+  color: @white;
+  padding: 11px 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: @pink;
+}
+
+.photo__image img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.photo__include {
+  display: flex;
+  flex-direction: column;
+  margin-top: -21px;
+}
+
+.photos__wrapper {
+  background-color: @white;
+}
